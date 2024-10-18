@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylwia Wójcik - Portfolio</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .background {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-image: url('Animation.gif');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -5;
+    }
+
+    .logo {
+      color: white; 
+      font-size: 18px;
+      font-weight: Bold; 
+      position: absolute; 
+      top: 5%; 
+      left: 5%; 
+      font-family: Inter;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 5%; 
+      right: 5%; 
+      display: flex;
+      gap: 20px; 
+      font-family: Inter;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white; 
+      font-size: 14px;
+      padding: 10px;
+      border: 1px solid white; 
+      border-radius: 100px; 
+      transition: all 0.3s ease;  
+    }
+
+    .navbar a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .title {
+      color: white;
+      font-size: 25px;
+      text-align: centre;
+      padding: 0px;
+      border-radius: 10px;
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      right: 10%;
+      font-family: Absans;
+     }
+     
+     .content {
+	  color: white;
+      font-size: 15px;
+      text-align: centre;
+      padding: 0px;
+      border-radius: 10px;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      right: 10%;
+      font-family: Inter;
+      width: 50%;
+  }
+  
+      .project {
+	  color: white;
+      font-size: 12px;
+      text-align: right;
+      padding: 0px;
+      border-radius: 10px;
+      position: absolute;
+      top: 60%;
+      right: 10%;
+      font-family: Inter;
+      width: 100%;
+    }
+
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      gap: 10px;
+      position: absolute;
+      bottom 40%;
+      right: 0%;
+      font-family: Inter;
+      
+    }
+    
+    .social-media a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 100px;
+      transition: all 0.3s ease;
+
+    }
+
+    .social-media a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+     footer {
+      position: absolute;
+      top: 200%;
+      left: 30px;
+      width: 100%;
+      margin-bottom: 50px;
+      }
+      
+      .footer-heading {
+      text-align: left;
+      padding: 10px 0;
+      color: white;
+      font-size: 30px; 
+      font-family: Absans;
+      margin-bottom: 50px;
+      }
+      
+      .footer-email {
+      left: 20px;
+      bottom: 10%;
+      text-align: left;
+      padding: 10px 0;
+      color: white;
+      font-size: 18px;
+      font-family: Inter;
+      margin-bottom: 30px;
+      }
+     
+      
+      .title2 {
+	  position: absolute;
+      top: 3%;
+      right: 5%;
+      width: 100%;
+      text-align: right;
+      padding: 10px 0;
+      color: white;
+      font-size: 30px; 
+      font-family: Absans;
+  }
+      
+   .about {
+	  position: absolute;
+      top: 60%;
+      left: 28%;
+      transform: translate(-50%, 0);
+      width: 600px;
+      text-align: left;
+      font-family: Absans;
+      
+  }
+  
+.content-container {
+  background-color: white; 
+  padding: 20px; 
+  border-radius: 70px; /* Rounded corners */
+  max-width: 1200px; /* Maximum width of the container */
+  height: 500px;
+  margin: 50% auto; /* Center the container and add vertical space */
+  font-family: Inter;
+  color: black;
+}
+
+
+.content-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  
+}
+
+.content-container img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 10%;
+}
+
+
+#demo div {
+  flex: 1;
+  Width: 500px;
+}
+
+
+#demo p {
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+}
+	   
+  .info-button {
+  text-decoration: none;
+  background-color: transparent;
+  color: white; 
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid white; 
+  border-radius: 100px; 
+  transition: all 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: white; 
+  font-size: 9px;
+  padding: 10px;
+  background: transparent;
+  border: 0px;
+  transition: all 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: none;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 300px;
+  z-index: 1;
+  padding: 30px 0; 
+  border: none; 
+  border-radius: 0px;
+  right: 0;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 5px 0px; 
+  transition: all 0.3s ease;
+  font-family: Inter; 
+  text-align: right;
+  border: 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+  text-decoration: underline; 
+  color:white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+      
+  </style>
+</head>
+<body>
+	
+  <div class="background"></div>
+
+  <div class="logo"><a href="index.html">
+	  <img src="logo.png"; width=130px;></a>
+	  </div>
+ 
+ 
+ 
+  <div class="navbar">
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="dm.html">Digital Marketing Strategy</a>
+      <a href="game.html">The Ultimate Game of Consequences</a></a>
+      <a href="projectx.html">Project X</a>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Get in touch</a>
+    <div class="dropdown-content">
+      <a href="mailto:sylwia.wojcik.e@gmail.com">sylwia.wojcik.e@gmail.com</a>
+      <a href="https://www.linkedin.com/in/sylwia-wojcik-1641431a0/">LinkedIn</a>
+      <a href="https://www.behance.net/sylwiawojcc143">Behance</a>
+    </div>
+  </div>
+
+</div>
+   
+ 
+</div>
+
+	  <div class="title">
+	  <p>Digital Marketing Strategy</p>
+	  </div>
+	  <br>
+	  <div class="content">
+	  <p>The Printable Fun is a digital design venture, offering high-quality, customizable digital downloads for a wide range of creative needs. As the graphic designer behind this brand, I developed a cohesive aesthetic, created diverse product offerings—from printable calendars and planners to wall art and invitations—and built a customer-focused experience. My work involved everything from brand identity creation and marketing strategy to product design and social media promotion. This project showcases my ability to blend creativity with practicality, offering unique and accessible solutions for everyday life.</p>
+	  <p>Task: To create a Digital Marketing Strategy for The Printable Fun</p>
+	  </div>
+	  
+	  <div class="project">
+	  <p>Logo Design<br>Marketing Strategy<br>Content Design<br></p>
+	  <p>Projects created during<br> the Clickstarts Digital Skills Course</p>
+	  <p>2024</p>
+	  </div>
+		
+		<br>
+		
+		<div class="content-container">
+  <img src="dmlogo.png" height="35">
+  <p>Project description and details...</p>
+</div>
+
+  <footer> 
+	  <div class="footer-heading">
+		  <p>Have any questions?</p>
+		
+		  
+		  <div class="footer-email">
+     <a href="mailto:sylwia.wojcik.e@gmail.com" style="color: white; text-decoration: undeline;">sylwia.wojcik.e@gmail.com</a>
+     </div>
+     
+     <div class="title2">
+	 <p>Follow Me</p>
+	 
+	 
+  <div class="social-media">
+    <a href="https://www.linkedin.com/in/sylwia-wojcik-1641431a0/"> LinkedIn </a>
+    <a href="https://www.behance.net/sylwiawojcc143">Behance</a>
+  </div>
+     
+     </div>
+  </footer>
+
+</body>
+</html>

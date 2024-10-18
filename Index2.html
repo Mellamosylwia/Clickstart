@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylwia Wójcik - Portfolio</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .background {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-image: url('Animation.gif');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -5;
+    }
+    
+
+    .navbar {
+      gap: 20px; 
+      font-family: Inter;
+      float: right;
+      margin-right: 1%;
+      margin-top: 2%;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white; 
+      font-size: 14px;
+      padding: 10px;
+      border: 1px solid white; 
+      border-radius: 100px; 
+      transition: all 0.3s ease;  
+    }
+
+    .navbar a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .content {
+      color: white;
+      font-size: 25px;
+      text-align: centre;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: Absans;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+    
+    }
+    
+    .title {
+      color: white;
+      font-size: 25px;
+      text-align: centre;
+      padding: 0px;
+      border-radius: 10px;
+      font-family: Absans;
+     }
+    
+
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      gap: 10px;
+      font-family: Inter;
+      
+    }
+    
+    .social-media a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 100px;
+      transition: all 0.3s ease;
+
+    }
+
+    .social-media a:hover {
+      background-color: white;
+      color: black;
+    }
+
+  
+    .projects {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%; 
+    }
+
+    .project-button {
+      width: 430px;
+      height: 430px;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .project-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .project-name {
+      font-weight: bold;
+      margin-left: 10%;
+      margin-top: 15%;
+      font-family: Absans;
+      font-size: 30px;
+    }
+
+    .project-date {
+      font-size: 14px;
+      font-family: Inter;
+      margin-top: 30%;
+      margin-left: 10%;
+    }
+    
+     footer {
+      width: 100%;
+      margin-bottom: 50px;
+      }
+      
+      .footer-heading {
+      text-align: left;
+      padding: 10px 0;
+      color: white;
+      font-size: 30px; 
+      font-family: Absans;
+      margin-bottom: 50px;
+      }
+      
+      .footer-email {
+      left: 20px;
+      bottom: 10%;
+      text-align: left;
+      padding: 10px 0;
+      color: white;
+      font-size: 18px;
+      font-family: Inter;
+      margin-bottom: 30px;
+      }
+     
+      
+      .title2 {
+      width: 100%;
+      text-align: right;
+      padding: 10px 0;
+      color: white;
+      font-size: 30px; 
+      font-family: Absans;
+  }
+      
+   .about {
+      transform:
+      width: 100%;
+      text-align: left;
+      margin-left: 	6%;
+      font-family: Absans;
+  }
+
+#demo div {
+  flex: 1;
+  Width: 600px;
+}
+
+
+#demo p {
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+}
+	   
+  .info-button {
+  text-decoration: none;
+  background-color: transparent;
+  color: white; 
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid white; 
+  border-radius: 100px; 
+  transition: all 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: white; 
+  font-size: 9px;
+  padding: 10px;
+  background: transparent;
+  border: 0px;
+  transition: all 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: none;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 300px;
+  z-index: 1;
+  padding: 30px 0; 
+  border: none; 
+  border-radius: 0px;
+  right: 0;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 5px 0px; 
+  transition: all 0.3s ease;
+  font-family: Inter; 
+  text-align: right;
+  border: 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+  text-decoration: underline; 
+  color:white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+      
+  </style>
+</head>
+<body>
+	
+  <div class="background"></div>
+
+      <a href="index.html"><img src="logo.png"; width=130px style="margin:2%" ;></a>
+ 
+ 
+  <div class="navbar">
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="dm.html">Digital Marketing Strategy</a>
+      <a href="game.html">The Ultimate Game of Consequences</a></a>
+      <a href="#project3">Project X</a>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Get in touch</a>
+    <div class="dropdown-content">
+      <a href="mailto:sylwia.wojcik.e@gmail.com">sylwia.wojcik.e@gmail.com</a>
+      <a href="https://www.linkedin.com/in/sylwia-wojcik-1641431a0">LinkedIn</a>
+      <a href="https://www.behance.net/sylwiawojcc143">Behance</a>
+    </div>
+  </div>
+
+</div>
+   
+ 
+</div>
+
+
+  <div class="content">
+    <p>Hi, I’m Sylwia, an aspiring UX/UI designer based in Bristol. My design journey has been fueled by a passion for Web Design, Visual Design, and Moving Image. I’m driven by the belief that beautiful, thoughtful design can make a real difference in people’s lives. I strive to create visually engaging and user-centered experiences that both inspire and help. </p>
+  </div>
+  
+ <div class="about" style="info-button">
+  <button class="info-button" type="button" onclick="showAboutInfo()">
+    About me
+  </button>
+
+  <div id="demo"></div>
+</div>
+
+<script>
+  function showAboutInfo() {
+	  document.getElementById('demo').innerHTML = `
+    <div style="display: flex; gap: 50px;">
+        <div>
+          <p>Education:</p>
+          <p>Coursea<br>Google UX Course</p>
+          <p>Bath Spa University<br>Clickstarts Digital Course</p>
+          <p>University of West of England<br>BA Graphic Design</p>
+          
+        </div>
+        <div>
+          <p>Skills:
+          <p>Figma<br>Photoshop<br>llustrator<br>Indesign</p>
+          <p>HTML<br>CSS<br>JavaScript</p>
+      </div>`;
+  }
+</script>
+
+  
+<br>
+	  <div class="title">
+	  <p>Projects</p>
+	  </div>
+		
+
+  <div class="projects">
+    <a href="dm.html" class="project-button">
+      <div class="project-name">Digital Marketing<br>Strategy</div>
+      <div class="project-date">Brand Identity<br>Digital Marketing<br>Content Design</div>
+    </a>
+    <a href="game.html" class="project-button">
+      <div class="project-name">The Ultimate Game of Consequences</div>
+      <div class="project-date">UX/UI<br>Web Developent<br>Visual Design</div>
+    </a>
+    <a href="#project3" class="project-button">
+      <div class="project-name">Project X<br>*</div>
+      <div class="project-date">Project 1<br>project 2<br>project 3</div>
+    </a>
+  </div>
+
+  <footer style="display:block; margin-top: 10px;"> 
+	  <div class="footer-heading">
+		  <p>Have any questions?</p>
+		
+		<div class="footer-email">
+			<a href="mailto:sylwia.wojcik.e@gmail.com" style="color: white; text-decoration: undeline;">sylwia.wojcik.e@gmail.com</a>
+		</div>
+     
+		<div class="title2">
+			<p>Follow Me</p>
+	 
+			  <div class="social-media">
+				<a href="https://www.linkedin.com/in/sylwia-wojcik-1641431a0"> LinkedIn </a>
+				<a href="https://www.behance.net/sylwiawojcc143">Behance</a>
+			 </div>
+			</div>
+     </div>
+  </footer>
+
+</body>
+</html>
